@@ -148,6 +148,18 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/sech',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'Form',
+        component: () => import('@/views/sech/index'),
+        meta: { title: 'Form', icon: 'form' }
+      }
+    ]
+  },
 
   {
     path: 'external-link',
